@@ -1,0 +1,36 @@
+package p3clase9;
+/**
+ * @author CastroMonica
+ */
+import java.util.Scanner;
+public class P3Clase9 {
+    public static void main(String[] args) {
+        byte opcion = 0;
+        Scanner lectura= new Scanner (System.in);
+        do { // Hacer como minimo una vez.
+             System.out.println("1. Mostrar 100 numeros con un bucle for");
+             System.out.println("2. Mostrar 100 numeros con un bucle while");
+             System.out.println("3. Introduce un numero. ¿Es mayor que cero?");
+             // Mostramos un mensaje por pantalla
+             System.out.println("Introduce un numero: ");
+             // Lo leemos y lo guardamos en la variable.
+             opcion = lectura.nextByte();
+             // y mientras el numero sea menor que 1 o mayor que 5
+        } while (opcion<1 || opcion> 3);
+        // Dependiendo de lo que el usuario introduzca
+        //ejecutamos una opcion u otra
+        switch(opcion) {
+        case 1:
+             System.out.println("Opcion 1 ejecutada");
+             break;
+        case 2: 
+             System.out.println("Opcion 2 ejecutada");
+             break;
+        case 3:
+             System.out.println("Opcion 3 ejecutada");
+             break;
+        default:
+             System.out.println("Es imposible que el programa entre aqui");
+        }
+    }
+}

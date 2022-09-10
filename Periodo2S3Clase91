@@ -1,0 +1,10 @@
+package p2clase91;
+/**
+ * @author CastroMonica
+ */
+public class P2Clase91 {
+    public static void main(String[] args) {
+        for(int i=100;i>=1;i--)
+            System.out.println(i);
+    }
+}
